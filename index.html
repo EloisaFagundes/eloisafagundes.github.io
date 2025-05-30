@@ -63,8 +63,17 @@
     </form>
 
     <script>
-        navigator.serviceWorker.register('/sdk.js');
-    </script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sdk.js')
+            .then(registration => {
+                console.log('Service Worker registrado com sucesso:', registration);
+            })
+            .catch(error => {
+                console.error('Falha ao registrar Service Worker:', error);
+            });
+    } else {
+        console.warn('Service Worker não é suportado neste navegador.');
+    }
 
     <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/b99da709-ae30-4819-9862-48211b0e9c1f-loader.js" ></script>
 
