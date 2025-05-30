@@ -1,4 +1,3 @@
-
 /**
   * Resultados Digitais - 5/30/2025, 6:11:20 PM
   * webpush-client - Project that controls the webpush notifications and permissions
