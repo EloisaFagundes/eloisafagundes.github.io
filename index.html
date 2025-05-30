@@ -1,1 +1,74 @@
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Exemplo</title>
+    <style>
+        form {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="email"],
+        input[type="text"],
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Formulário de Contato</h2>
+
+    <form id="bananinha">
+        <label for="name">Seu Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="mensagem">Seu Primeiro Nome:</label>
+        <input type="text" id="mensagem" name="mensagem" required>
+
+        <label for="email">Seu E-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="job_title">Seu Cargo:</label>
+        <input type="text" id="job_title" name="job_title" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script>
+        navigator.serviceWorker.register('/webpush-sdk.js');
+    </script>
+
+    <script type="text/javascript" async src="https://d2umgtt5tsqx05.cloudfront.net/js/loader-scripts/b99da709-ae30-4819-9862-48211b0e9c1f-loader.js" ></script>
+
+
+</body>
+
+</html>
